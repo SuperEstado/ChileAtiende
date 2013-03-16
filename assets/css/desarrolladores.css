@@ -1,0 +1,76 @@
+body{
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+#wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+
+h1.logo a{
+    display: block;
+    width: 150px;
+    height: 81px;
+    background: url(../images/logo_api.png);
+    text-indent: -9999px;
+}
+
+.error{
+    color: red;
+}
+
+.menu{
+    margin-left: 0;
+}
+
+.menu li a{
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+    color: #000;
+}
+.menu li a:hover{
+    text-decoration: underline;
+}
+
+
+#main{
+    overflow: hidden;
+}
+
+#secondary{
+    width: 260px;
+    float: left;
+}
+
+#primary{
+    float: left;
+    width: 700px;
+}
+
+table.tabla{
+    width: 100%;
+    border-collapse:collapse;
+
+}
+table.tabla th{
+    background: #6199DF;
+    color: #fff;
+}
+
+table.tabla th, table.tabla td{
+    border: 1px solid #bbb;
+    padding: 10px;
+}
+
+pre{
+    overflow: auto;
+    background: #fafafa;
+    padding: 6px 10px;
+    border: 1px solid #bbb;
+}
+
+#footer{
+    height: 100px;
+}

@@ -1,0 +1,512 @@
+body{
+    height: 100%;
+    font-size: 12px;
+    font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+    background: #ccc url(../images/funcionarios/bg.png) 0 0 repeat fixed;
+    text-align: left;
+    color: #787878;
+    overflow: hidden;
+}
+
+select {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+a {
+    color: #40ABD8;
+}
+a:hover {
+    text-decoration: underline;
+}
+/**** HEADER ****/
+
+div#top {
+	background-color: #EBEBEB;
+    background-image: linear-gradient(bottom, #EBEBEB 23%, #FFFFFF 62%);
+	background-image: -o-linear-gradient(bottom, #EBEBEB 23%, #FFFFFF 62%);
+	background-image: -moz-linear-gradient(bottom, #EBEBEB 23%, #FFFFFF 62%);
+	background-image: -webkit-linear-gradient(bottom, #EBEBEB 23%, #FFFFFF 62%);
+	background-image: -ms-linear-gradient(bottom, #EBEBEB 23%, #FFFFFF 62%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.23, #EBEBEB),
+		color-stop(0.62, #FFFFFF)
+	);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+h1 a{
+    display: block;
+    width: 120px;
+    height: 22px;
+    overflow: hidden;
+    text-indent: -999px;
+    background: transparent url(../images/funcionarios/sprite.png) 0 0 no-repeat;
+    position: absolute;
+    top: 6px;
+    left: 10px;
+}
+
+a.web_publico {
+    display: block;
+        background: transparent url(../images/funcionarios/sprite.png) 0 -162px no-repeat;
+height: 20px;
+padding: 4px 0 0 26px;
+        position: absolute;
+    top: 6px;
+    right: 10px;
+}
+
+h2 {
+    height: 14px;
+    margin: 5px 0 10px;
+    font-weight: bold;
+    height: 100%;
+}
+
+nav.secondary-nav {
+    background: #fff;
+    padding: 6px 10px;
+}
+
+nav ul li, .main_menu li, .listar_menu li{
+    display: inline;
+}
+
+ul.primary-nav {
+    margin: 4px 0 0 6px;
+    padding: 0;
+}
+
+ul.primary-nav li {
+    margin: 0 2px 0 0;
+    display: inline-block;
+    height: 20px;
+    padding: 6px 16px 6px 6px;
+    background: -moz-linear-gradient(top, #fff , #EBEBEB);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff),  to(#EBEBEB));
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+}
+
+ul.primary-nav li.on {
+    background: -moz-linear-gradient(top, #EBEBEB , #fff);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#EBEBEB),  to(#fff));
+}
+
+ul.primary-nav li a {
+    display: inline-block;
+    color: #000;
+    font-weight: bold;
+}
+
+ul.primary-nav li a.tab_buscar {
+    background: transparent url(../images/funcionarios/sprite.png) -28px -26px no-repeat;
+    padding: 2px 0 0 24px;
+    height: 20px;
+}
+
+ul.primary-nav li a.tab_listar {
+    background: transparent url(../images/funcionarios/sprite.png) 0 -186px no-repeat;
+    padding: 2px 0 0 28px;
+    height: 20px;
+}
+
+nav.secondary-nav div, nav.secondary-nav div ul {
+    width: 100%;    
+}
+
+nav.secondary-nav div ul li a {
+    display: inline-block;
+    padding: 6px;
+    border: 1px solid #CCC;
+    width: 28%;
+    text-align: center;
+    color: #024B9A;
+    background: #fff;
+    font-weight: bold;
+}
+
+nav.secondary-nav div ul li a.on {
+    background: #024B9A;
+    color: #fff;
+}
+
+section#content {
+    overflow-y: scroll;
+    width: 90%;
+    height: 400px;
+    background: #fff;
+    padding: 15px 10px 6px 10px;
+    margin: 0 2%;
+
+}
+
+/**** BUSQUEDA ****/
+
+input.buscar{
+    border: 1px solid #ccc;
+    background: #c3d8f3;
+    color: #000;
+    width: 60%;
+    height: 24px;
+    padding: 0 0 0 6px;
+}
+
+input.enviar{
+    border: 0;
+    display: inline-block;
+    width: 94px;
+    height: 30px;
+    background: transparent url(../images/funcionarios/sprite.png) 0 -104px no-repeat;
+    color: #fff;
+    text-align: left;
+    padding-left: 14px;
+    font-weight: bold;
+}
+input.pagina{
+    width: 30px;
+    border: 1px solid #ccc;
+}
+input.movimiento_pagina{
+    display: inline;
+    float: left;
+}
+.paginacion_container{
+    display: inline;
+    float: left;
+}
+
+/**** RESULTADOS DE BUSQUEDA ****/
+
+section.result {
+    clear: both;
+    margin: 1em auto;
+    background: -moz-linear-gradient(top, #fff , #EBEBEB);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff),  to(#EBEBEB));
+    min-height: 50px;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+
+section.result h2 {
+    margin: 0 0 0 30px;
+    border-left: 1px solid #ccc;
+    padding-bottom: 1em;
+}
+
+section.result h2 a{
+    display: block;
+    background: transparent url(../images/funcionarios/sprite.png) -138px -162px no-repeat;
+    padding: 0 0 0 20px;
+    margin: 0 0 0 8px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #555;
+}
+
+section.result p {
+    border-left: 1px solid #ccc;
+    padding: 0 0 10px 28px;
+    margin-left: 30px
+}
+
+a.resultado_ver_cartilla {
+    display: block;
+    background: transparent url(../images/funcionarios/sprite.png) 0 -136px no-repeat;
+    width: 148px;
+    height: 20px;
+    overflow: hidden;
+    text-align: center;
+    font-size: .8em;
+    color: #fff;
+    vertical-align: center;
+    padding-top: 5px;
+    clear: both;
+    margin: 1em 0 1em 30%;
+}
+
+footer div {
+    position: relative;
+}
+
+.scrollable {
+
+    /* required settings */
+    position:relative;
+    overflow:hidden;
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+
+}
+
+.scrollable ul.items {
+    /* this cannot be too large */
+    width:20000em;
+    position:absolute;
+}
+
+.items li {
+    float:left;
+    width: 260px;
+}
+
+/*Paginacion*/
+a.prev {
+    width: 28px;
+    height: 24px;
+    background: transparent url(../images/funcionarios/sprite.png) 0 -327px no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+    text-indent: -999px;
+}
+
+a.next {
+    width: 28px;
+    height: 24px;
+    background: transparent url(../images/funcionarios/sprite.png) 0 -302px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    overflow: hidden;
+    text-indent: -999px;
+}
+
+/*Favorito*/
+section#content div.star {
+    cursor: pointer;
+    padding: 19px 0 0 0;
+    margin: 5px 2px;
+    overflow: hidden;
+    background: transparent url(../images/funcionarios/sprite.png) 0 -351px no-repeat;
+    height: 0px !important;
+    height /**/:19px;
+    width: 20px;
+}
+
+section.result div.star {
+    position: absolute;
+    top: -8px;
+    margin: 0;
+    padding: 0;
+}
+
+section.result div.convenio_redchile {
+    position: absolute;
+    top: 20px;
+    left: 4px;
+    background: transparent url(../images/funcionarios/sprite.png) 0px -371px no-repeat;
+    width: 16px;
+    height: 2px;
+}
+section#content div.off {
+    background: transparent url(../images/funcionarios/sprite.png) -21px -351px no-repeat;
+}
+.responsible, .meta {
+    font-size: 11px;
+}
+
+.encabezado_ficha {
+    background: -moz-linear-gradient(top, #fff , #EBEBEB);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff),  to(#EBEBEB));
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #E2E2E2;
+}
+
+.iframe{
+    display: none;
+}
+
+section#content div {
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+.modal{
+    display: none;
+    width: 300px;
+    padding: 10px;
+    background: -moz-linear-gradient(top, #fff , #EBEBEB);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff),  to(#EBEBEB));
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.modal input, .modal textarea{
+    border: 1px solid #ccc;
+    background: #c3d8f3;
+    color: #000;
+    width: 90%;
+    height: 24px;
+    padding: 0 0 0 6px;
+}
+
+.modal textarea{
+    height: 100px;
+    margin-top: 10px;
+}
+
+.modal button{
+    border: 0;
+    display: inline-block;
+    width: 100px;
+    height: 26px;
+    background: transparent url(../images/funcionarios/sprite.png) 0 -76px no-repeat;
+    color: #fff;
+    text-align: left;
+    padding-left: 14px;
+    font-weight: bold;
+}
+}
+
+section#content h3, .modal p {
+    display: block;
+    background: transparent url(../images/bullet_rojo.png) no-repeat;
+    font-weight: bold;
+    padding-left: 14px;
+    line-height: 12px;
+    margin-bottom: 10px;
+}
+section#content div.convenio {
+    padding: 7px 0 0 0;
+    margin: 10px 0 0 0;
+    overflow: hidden;
+    background: transparent url(../images/funcionarios/sprite.png) 0 -438px no-repeat;
+    height: 0px !important;
+    height /**/:7px;
+    width: 45px;
+    height: 7px;
+}
+
+.ok, .error{
+    color: #fff;
+    font-weight: bold;
+    width: 220px;
+}
+
+.ok{
+    background-color: green;
+}
+
+.error{
+    background-color: red;
+}
+
+div.imprimir ul {
+    background-color: #024B9A;
+    margin: 0;
+    padding: 0;
+}
+div.imprimir ul li {
+    display: inline-table;
+        height: 28px;
+    width: 32%;
+    padding: 4px 0 0 2em;
+    margin: 0;
+}
+div.imprimir ul li:hover {
+    background-color: #025EC4;
+}
+div.imprimir ul li a {
+    display: inline-block;
+    color: #FFF;
+    font-weight: bold;
+    background: transparent url(../images/funcionarios/sprite.png) 0 -282px no-repeat;
+    padding: 2px 5px 0px 20px;
+
+}
+div.imprimir ul li.mail a {
+    background: transparent url(../images/funcionarios/sprite.png) -15px -264px no-repeat;
+    padding: 2px 5px 0px 25px;
+}
+div.imprimir ul li a:hover {
+    text-decoration: none;
+}
+
+div#noticias {
+    margin-top: 10px;
+    background-color: #FFF;
+    padding: 10px 0;
+}
+
+div#noticias h3 {
+    font-weight: bold;
+    color: #FFF;
+    background-color: #024B9A;
+    text-align: center;
+    padding: 3px 0;
+    margin-bottom: 10px;
+}
+section#content div.encabezado_ficha h2 {
+    width: 92%;
+}
+
+.title, .responsible, .meta {
+    padding: 0 0 0 40px;
+}
+
+section#content div.encabezado_ficha .star {
+    float: left;
+    
+}
+
+section#content ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+section#content ol li {
+    margin-bottom: 5px;	
+}
+section#content ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+section#content ul li {
+    margin-bottom: 5px;	
+}
+section#content p {
+    margin-bottom: 5px;	
+}
+section#content div h3 {
+	background: transparent url(../images/bullet_rojo.png) no-repeat;
+	padding-left: 15px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+section#content h3.title {
+	font-weight: bold;
+	color: #024B9A;
+	padding: 10px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #DDD;
+	font-size: 14px;
+}
+section#content div.resultado_sin_favoritos {
+	background: transparent url(../images/funcionarios/sin_favoritos.png) center top no-repeat;
+	padding-top: 45px;
+	font-weight: bold;
+	text-align: center;
+}
+section#content div.resultado_sin_resultados {
+	background: transparent url(../images/funcionarios/sin_resultado.png) center top no-repeat;
+	padding-top: 45px;
+	font-weight: bold;
+	text-align: center;
+}

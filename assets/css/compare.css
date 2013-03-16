@@ -1,0 +1,293 @@
+/**/
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    margin-top: 36px;
+    width: 100%;
+    line-height: 120%;
+    color: #595959;
+}
+
+p {
+    margin: 10px 2px 0 0;
+}
+
+ul, ol {
+    margin: 3em 0 0 20px;
+}
+
+ul li {
+    list-style: inside disc;
+    margin-bottom: 1em;
+}
+
+ul#resumen_tramite {
+margin: 20px 0;
+}
+
+ul#resumen_tramite2 {
+margin: 20px 0;
+}
+
+ul#resumen_tramite li {
+width: 100%;
+display: inline-block;
+float: left;
+border: 1px solid #CCC;
+padding-bottom: 10px;
+margin: -1px 0 0 0;
+}
+
+ul#resumen_tramite2 li {
+width: 100%;
+display: inline-block;
+float: left;
+border: 1px solid #CCC;
+padding-bottom: 10px;
+margin: -1px 0 0 0;
+}
+
+ul#resumen_tramite li h4, ul#resumen_tramite li p {
+margin: 10px 10px 0 10px;
+}
+
+ul#resumen_tramite2 li h4, ul#resumen_tramite2 li p {
+margin: 10px 10px 0 10px;
+}
+
+div#howto_tramite {
+    width: 100%;
+    margin: 50px auto 0 auto;
+    background: none repeat scroll 0 0 #F6F6F6;
+    /*background: #f6f6f6 url(../images/bg-tabs.png) bottom left repeat-x;*/
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    position: relative;
+    z-index: 2;
+}
+
+div#howto_tramite ul.nav {
+    position: absolute;
+    z-index: 2;
+    left: 12px;
+    top: -41px;
+    margin: 0;
+}
+
+div#howto_tramite ul.nav li {
+    display: inline;
+    margin: 0;
+}
+
+div#howto_tramite ul.nav li a {
+    display: inline-block;
+    height: 20px;
+    color: #787878;
+    border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border: 1px solid #dbdbdb;
+    border-bottom: 0;
+    font-family: Arial, "Nimbus Sans L", Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+    background: #f6f6f6 url(../images/bg-tab.png) 0 0 repeat-x;
+    position: relative;
+}
+
+div#howto_tramite ul.nav li a:hover {
+    text-decoration: none;
+    color: #464646;
+}
+
+div#howto_tramite ul.nav li a.current {
+    color: #464646;
+    background: #f6f6f6;
+}
+
+div#howto_tramite div {
+    margin: 20px;
+}
+
+div#howto_tramite2 {
+    width: 100%;
+    margin: 50px auto 0 auto;
+    background: none repeat scroll 0 0 #F6F6F6;
+    /*background: #f6f6f6 url(../images/bg-tabs.png) bottom left repeat-x;*/
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    position: relative;
+    z-index: 2;
+}
+
+div#howto_tramite2 ul.nav2 {
+    position: absolute;
+    z-index: 2;
+    left: 12px;
+    top: -41px;
+    margin: 0;
+}
+
+div#howto_tramite2 ul.nav2 li {
+    display: inline;
+    margin: 0;
+}
+
+div#howto_tramite2 ul.nav2 li a {
+    display: inline-block;
+    height: 20px;
+    color: #787878;
+    border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border: 1px solid #dbdbdb;
+    border-bottom: 0;
+    font-family: Arial, "Nimbus Sans L", Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+    background: #f6f6f6 url(../images/bg-tab.png) 0 0 repeat-x;
+    position: relative;
+}
+
+div#howto_tramite2 ul.nav2 li a:hover {
+    text-decoration: none;
+    color: #464646;
+}
+
+div#howto_tramite2 ul.nav2 li a.current {
+    color: #464646;
+    background: #f6f6f6;
+}
+
+div#howto_tramite2 div {
+    margin: 20px;
+}
+
+hr {
+    display: none;
+}
+
+hr.shadow {
+    display: block;
+    background: transparent url(../images/separador_horizontal.png) 0 0 no-repeat;
+    width: 389px;
+    height: 9px;
+    border: 0;
+    position: relative;
+    left: -10px;
+}
+
+h3, h4 {
+    font-family: Arial, sans-serif;
+    font-size: 1.4em;
+    color: #595959;
+    margin: 10px 0 0 0;
+    font-weight: bold;
+}
+
+h3 {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+h3.first_topic {
+    border-top: 0;
+}
+
+.change_set{
+    border: 1px solid #075698;
+    padding: 5px;
+    color: #000;
+    background-color: #FFF;
+    font-family: arial;
+    font-size: 95%;
+    margin: 10px 0;
+}
+
+.change_set h3{
+    margin: 0px;
+    padding: 0px;
+    font-size: 150%;
+    color: #000;
+    text-decoration: none;
+    border: 0px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.change_set ul{
+    margin: 0px;
+    color: #000;
+    background:#58a1dd; /* default background for browsers without gradient support */
+    /* css3 */
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(#FFF), to(#EBEBEB));
+    background:-moz-linear-gradient(#FFF, #EBEBEB);
+    background:-o-linear-gradient(#FFF, #EBEBEB);
+    background:linear-gradient(#FFF, #EBEBEB);
+
+}
+.change_set li{
+    list-style-type: none;
+    padding: 10px;
+    text-align: justify;
+}
+
+.change_set strong{
+    font-size: 130%;
+    color:#EA9C00;
+}
+
+del{
+    background-color: #FFC1C1;
+    color: red;
+}
+
+ins{
+    background-color: #c6ffaa;
+    color: green;
+    text-decoration: none;
+}
+
+p.comment strong,p.comment_toggle strong{
+    color: #000;
+}
+p.comment{
+    display: none;
+}
+p.comment,p.comment_toggle{
+    position:relative;
+    padding:5px;
+    margin:1em 0 1em;
+    color:#000;
+    font-weight: bold;
+    background:#EFEFEF; /* default background for browsers without gradient support */
+    /* css3 */
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(#EBEBEB), to(#EFEFEF));
+    background:-moz-linear-gradient(#EBEBEB, #EFEFEF);
+    background:-o-linear-gradient(#EBEBEB, #EFEFEF);
+    background:linear-gradient(#EBEBEB, #EFEFEF);
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+
+td {
+    background-color: #FFF;
+}
+
+table.comparar{
+    width: 100%;
+    margin: 0 5px;
+}
+
+table.comparar td{
+    padding: 0px 10px;
+}
+
+/**/

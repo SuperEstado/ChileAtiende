@@ -1,0 +1,754 @@
+/* 
+    Document   : backend-new
+    Created on : 18-10-2011, 10:52:28 AM
+    Author     : jgarrido
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+html,body { 
+    height: 100%; 
+}
+
+body {
+    min-height: 100%;
+    height: 100%;
+    line-height: 140%;
+    margin: 0 auto -4em;
+    font-family: Arial;
+    font-size: 12px;
+    vertical-align: baseline;
+    color: #787878;
+    background: url(../images/header/bg.png) center top repeat-y;
+
+}
+
+#wrapper {
+    width: 970px;
+    margin: 0 auto;
+}
+
+#header {
+    position: relative;
+    height: 160px;
+    margin-bottom: 25px;
+}
+
+#header .logo {
+    background: url(../images/header/logo_chile_limpio.png);
+    width: 170px;
+    height: 165px;
+    text-indent: -9999px;
+}
+
+#header .logo-ChA {
+    background: url(../images/backend/chile-atiende.png);
+    width: 80px;
+    height: 112px;
+    text-indent: -9999px;
+    float: right;
+    margin-top: -165px;
+    /*opacity: 0.1;*/
+}
+
+#header .tools {
+    position: absolute;
+    /*top: 170px;
+    left: 540px;*/
+    width: 940px;
+}
+
+#header .tools a{
+    color: #000;
+}
+
+#header .menu {
+    float:right;
+}
+
+#header .menu li {
+    float: left;
+    padding: 0 20px;
+}
+
+#header .menu li.usuario {
+    background: url(../images/backend/user_suit.png) left no-repeat;
+}
+
+#header .menu li.home {
+    background: url(../images/backend/house.png) left no-repeat;
+}
+
+#header .menu li.salir {
+    background: url(../images/backend/door_in.png) left no-repeat;
+}
+
+#secondary {
+    float: left;
+    min-height: 650px;
+    width: 202px;
+    min-width: 150px;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    color: #000;
+}
+
+#secondary h2 {
+    background-color: #EBEBEB;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 5px 0 5px 0;
+}
+
+#secondary ul {
+    border: 1px solid #EBEBEB;
+    margin-right: 5px;
+    padding: 7px 0 7px 10px;
+}
+
+#secondary ul li {
+    margin-bottom: 3px;
+}
+
+#secondary ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+#secondary ul li a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+#secondary ul li ul {
+    border: 0;
+    margin-left: -10px;
+}
+
+#secondary ul li ul li {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+#primary {
+    float: left;
+    margin-left: 10px;
+    /*border: 1px solid black;*/
+    width: 720px;
+    min-height: 650px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+#primary .breadcrumb {
+    margin-top: 5px;
+    min-width: 85px;
+    background-color: #EDEDED;
+    margin: 5px 10px 15px 0;
+    padding: 5px 0 5px 15px;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px;
+}
+
+#primary .breadcrumb a {
+    color: #000;
+}
+
+#primary .pane {
+    padding-top: 15px;
+    /*border-top: 1px solid #EDEDED;*/
+}
+
+#primary .pane h2 {
+    font-size: 1.5em; 
+    font-weight: bold;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #EDEDED;
+}
+
+fieldset {
+    border: 1px solid #CCC;
+    margin-bottom: 10px;
+    padding: 10px;
+    /*background: white url(../images/backend/bg_general.png) repeat-x;*/
+}
+
+legend {
+    color: #036;
+    font-family: arial;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+form.filtro {
+    background: #EEF8FF;
+    border: 1px solid #CCC;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+form.filtro_titulo {
+    float: left;
+    padding-top: 6px;
+}
+
+form.filtro_titulo input[type="text"] {
+    border-width: 1px;
+}
+
+.ajaxForm {
+    margin: 15px 0 5px 0;
+}
+
+.error {
+    background: none repeat scroll 0 0 #FFCCCC;
+    border: 1px solid red;
+    margin-bottom: 10px;
+    padding: 4px;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.message {
+    background: none repeat scroll 0 0 #ccff99;
+    border: 1px solid green;
+    margin-bottom: 10px;
+    padding: 4px;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.red {
+    color: red;
+}
+
+.boton {
+    display: inline-block;
+    color: white;
+    background: #006CB7;
+    padding: 7px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    background: -moz-linear-gradient(top, #006CB7 , #003284 50%);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#006CB7), to(#003284));
+    margin: 10px 10px 15px;
+}
+
+.guardar {
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(1, rgb(51,204,51)), color-stop(0, rgb(0,102,0)) );
+    background-image: -moz-linear-gradient( center bottom, rgb(51,204,51) 100%, rgb(0,102,0) 0% );
+    background-image: -o-linear-gradient( top, rgb(51,204,51), rgb(0,102,0) );
+    border: 0 none;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    padding: 7px 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cancelar {
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(1, rgb(204,204,204)), color-stop(0, rgb(120,120,120)) );
+    background-image: -moz-linear-gradient( center bottom, rgb(204,204,204) 100%, rgb(120,120,120) 0% );
+    background-image: -o-linear-gradient( top, rgb(204,204,204), rgb(120,120,120) );
+    border: 0 none;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    padding: 7px 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+table.formTable {
+    /*border: 1px solid #EBEBEB;*/
+    min-width: 70%;
+    width: 100%;
+}
+
+table.formTable td {
+    padding: 2px;
+    vertical-align: top;
+    padding: 7px 3px 7px 10px;
+}
+
+table.formTable td ol{
+    list-style:decimal;
+}
+
+table.formTable td ul{
+    list-style:square;
+}
+
+table.tabla {
+    min-width: 65%;
+    border: 1px solid #EBEBEB;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+}
+
+table.tabla th {
+    background-color: #999;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+table.tabla th, table.tabla td {
+    border: 0 solid #999;
+    padding: 5px;
+}
+
+table.tabla tr th:first-child {
+    -moz-border-radius: 5px 0 0;
+    border-radius: 5px 0 0;
+}
+
+table.tabla tr th:last-child {
+    -moz-border-radius: 0 5px 0 0;
+    border-radius: 0 5px 0 0;
+}
+
+th, td {
+    text-align: left;
+}
+
+table.tabla th{
+    text-shadow: 1px 1px 1px #000;
+}
+
+table.tabla th.sortable a{
+    text-decoration: underline;
+}
+
+table.tabla th a {
+    color: #FFF;
+}
+
+table.tabla tr td a {
+    color: #000;
+}
+
+
+
+ul.updateWarningsRechazado li {
+    overflow: hidden;
+    /*background: #ffeded;*/
+    background: #EEF8FF;
+    border: 1px dashed #CCCCCC;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+ul.updateWarningsRechazado li .mensaje {
+    /*float: left;
+    width: 620px;*/
+    text-align: center;
+    background: url(../images/backend/exclamation.png) no-repeat;
+    /*font-weight: bold;*/
+}
+
+ul.updateWarnings li {
+    overflow: hidden;
+    /*background: #ffeded;*/
+    background: #FFFFEB;
+    border: 1px dashed #CCCCCC;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+ul.updateWarnings li .mensaje {
+    /*float: left;
+    width: 620px;*/
+    text-align: left;
+    background: url(../images/backend/exclamation.png) no-repeat;
+    /*font-weight: bold;*/
+    padding-left: 20px;
+}
+ul.updateWarnings li .accion {
+    float: left;
+}
+ul.updateWarnings li .accion .boton {
+    text-align: center;
+}
+
+.noregistros{
+    padding: 10px !important;
+    text-align: center;
+}
+
+.contador {
+    text-align: right;
+    margin: 10px 0 15px 0;
+}
+
+.contador span {
+    padding: 2px;
+    /*background-color: #EBEBEB;
+    border-radius: 5px;*/
+}
+
+.paginacion p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.paginacion a {
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+    margin-right: 3px;
+    padding: 5px 9px;
+    color: #000;
+}
+
+.paginacion strong, .paginacion a:hover {
+    background: none repeat scroll 0 0 #CCCCCC;
+    border: 1px solid #CCCCCC;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-right: 3px;
+    padding: 5px 9px;
+    text-decoration: none;
+}
+
+.cpanel{
+    min-height: 135px;
+}
+
+.cpanel-icon {
+    border: 1px solid #CCC; 
+    padding: 15px; 
+    width: 100px; 
+    float: left; 
+    margin: 5px;
+    min-height: 98px;
+    text-align: center;
+    font-weight: bold;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    color: #000;
+    background: white url(../images/backend/bg_general.png) repeat-x;
+}
+
+.cpanel-icon:hover{
+    background-color: #F3F3F3;
+    -moz-box-shadow: -5px -5px 5px #888;
+    -webkit-box-shadow: -5px -5px 5px #888;
+    box-shadow: 5px 5px 5px #888;
+}
+
+.cpanel-icon a{
+    text-decoration: none;
+    color: #000;
+}
+
+.cpanel-icon img{
+    margin-bottom: 15px;
+}
+
+.graph {
+    font-size: 1.3em;
+    padding: 10px 0 17px 0;
+    clear: both;
+}
+
+.stats {
+    float: left; 
+    min-width: 700px; 
+    padding-bottom: 15px;
+}
+
+.graficos{
+    padding: 1px;
+    border: 1px solid #999;
+}
+
+.tabs{
+    overflow: hidden;
+    padding-top: 5px;
+}
+
+.tabs li{
+    float: left;
+    margin-right: 5px;
+    margin-bottom: -1px;
+}
+
+.tabs li:first-child {
+    padding-left: 3px;
+}
+
+.tabs li a {
+    display: block;
+    border: 1px solid #EBEBEB;
+    padding: 5px 10px;
+    text-decoration: none;
+    -moz-border-radius: 7px 7px 0 0;
+    border-radius: 7px 7px 0 0;
+    width: 75px;
+    text-align: center;
+    color: #000;
+}
+
+.tabs li a:hover, .tabs li a.active, .tabs li a.current {
+    color: #000;
+    background: #EBEBEB;
+    -moz-box-shadow: -2px -2px 2px #888;
+    -webkit-box-shadow: -2px -2px 2px #888;
+    box-shadow: -2px -2px 2px #888;
+}
+
+.tabs li a.current {
+    color: #000;
+    background: #EBEBEB;
+}
+
+del{
+    background-color: #FFC1C1;
+    color: red;
+}
+
+ins{
+    background-color: #c6ffaa;
+    color: green;
+    text-decoration: none;
+}
+
+/*comparador de versiones*/
+.dragProyecto{
+    cursor: move;
+}
+
+.dropProyecto{
+    float: right;
+    width: 240px;
+    height: 130px;
+    border: 1px solid #EBEBEB;
+    /*margin-left: 10px;*/
+    padding: 5px;
+    position: relative;
+}
+
+.dropProyecto .clear{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #000;
+}
+
+.dropProyecto .compareButton{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #000;
+}
+
+.dropProyectoActive{
+    background: #ffffcc !important;
+}
+
+.dropProyectoComplete{
+    background: #ccffcc !important;
+}
+
+.dropProyecto .proyectosList li{
+    list-style: disc outside;
+    margin-left: 20px;
+}
+
+/*historial*/
+.logTable{
+    width: 100%;
+    border: 1px solid #EBEBEB;
+}
+/*impar*/
+.odd {
+    background: none repeat scroll 0 0 #DEDEDE;    
+    padding: 10px;
+    vertical-align: top;
+    text-shadow: 1px 1px 1px #fff;
+    color: #4f4f4f;
+}
+/*par*/
+.even {
+    background: none repeat scroll 0 0 #FFF;    
+    padding: 10px;
+    vertical-align: top;
+}
+.logTable h3 {
+    font-weight: bold;
+    padding-top: 7px;
+}
+
+.logTable h4 {
+    font-size: 14px;
+    font-weight: bold;
+    width: 160px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.logTable li {
+    list-style: square outside;
+    margin-left: 20px;
+    padding: 10px;
+    width: 450px;
+    text-align: justify;
+}
+
+.logTable .comment{
+    display: none;
+}
+
+.logTable .comment_toggle, .logTable .comment{
+    color: #aa8000;
+    background-color: #fff0c9;
+    width: 450px;
+    text-align: justify;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.logTable .comment_toggle strong, .logTable .comment strong{
+    color: #aa8000;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.logTable strong{
+    color: #000;
+}
+
+.logTable tr{
+    width: 600px;
+}
+
+.simpleOverlay{
+    position: relative;
+    display: none;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: #fff;
+    width: 640px;
+}
+
+.simpleOverlay .close {
+    background-image:url(../images/overlay/close.png);
+    position:absolute;
+    right:-15px;
+    top:-15px;
+    cursor:pointer;
+    height:30px;
+    width:30px;
+}
+
+#footer {
+    background: url(../images/logo_pixel.png) no-repeat;
+    background-size: 171px 10px;
+    background-position: 0 60px;
+    height: 70px;
+    float: left;
+    width: 970px;
+    margin-top: 18px;
+}
+
+#footer address {
+    text-align: center;
+}
+
+del{
+    background-color: #FFC1C1;
+    color: red;
+}
+
+ins{
+    background-color: #c6ffaa;
+    color: green;
+    text-decoration: none;
+}
+
+.tooltip_content{
+    overflow: auto;
+    height:140px;
+    width: 310px;
+    margin: 5px 5px 10px 5px;
+    text-align: justify;
+    color: #000;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.tooltip {
+	display:none;
+        background-image: url(../images/tooltip/white_arrow_big.png);
+	font-size:10px;
+	height:160px;
+	width:325px;
+	padding:25px;
+	color:#000;
+        font-size: 12px;
+}
+
+textarea.comentario_texto{
+    clear: both;
+    float: left;
+    margin-top: 10xp;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: none;
+    width: 430px;
+    padding: 10px;
+}
+
+span.comentario{
+    float :left;
+    clear: both;
+    display: none;
+    color: #000;
+    font-weight: bold;
+    background-image: url(../images/backend/message.png);
+    background-position: 3px 5px;
+    background-repeat: no-repeat;
+    padding: 5px;
+    padding-left: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: #fff0c9;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}

@@ -1,0 +1,25 @@
+/* TEAM */
+Titulo: Unidad de Modernizacion de Gobierno Electronico
+Twitter: @modernizacioncl
+
+Muchas gracias a:
+Felipe Mancini
+Valentina Raddatz
+Carolina Díaz
+Carolina Catalán
+Mercedes Castro
+Daniela Pradenas
+Marcelo Pérez
+Nicolas Silva
+Camilo López
+Enrique González
+José Garrido
+Claudio Vega
+Ricardo Rosende
+Sofía Varas
+
+/* SITE */
+Last update: 2012/01/05
+Standards: XHTML1.1, CSS3
+Components: CodeIgniter, jQuery
+Software: NetBeans, Mercurial, Ubuntu Server LAMP

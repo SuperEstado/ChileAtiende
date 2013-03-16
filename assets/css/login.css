@@ -1,0 +1,138 @@
+@font-face {
+	font-family: 'gobCL';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/gobcl_regular-webfont.eot');
+	src: local('☺'), url('../fonts/gobcl_regular-webfont.woff') format('woff'), url('../fonts/gobcl_regular-webfont.ttf') format('truetype'), url('../fonts/gobcl_regular-webfont.svg#webfont3jnenQ5S') format('svg');
+}
+
+@font-face {
+	font-family: 'gobCL';
+	src: url('../fonts/gobcl_bold-webfont.eot');
+	src: local('☺'), url('../fonts/gobcl_bold-webfont.woff') format('woff'), url('../fonts/gobcl_bold-webfont.ttf') format('truetype'), url('../fonts/gobcl_bold-webfont.svg#webfonttexfGeSU') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+body {
+    background: url(../images/header/main-bg.png) center repeat-y;
+    font-family: "gobCL",Verdana;
+    font-size: 13px;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 980px;
+}
+
+a {
+    outline: medium none;
+}
+
+a {
+    color: #006CB7;
+    text-decoration: none;
+}
+
+#header {
+    height: 170px;
+    position: relative;
+    z-index: 1000;
+}
+
+#header h1.logo a {
+    background: url("../images/header/logo_chile_limpio.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    font-size: 0;
+    height: 169px;
+    left: 10px;
+    line-height: 0;
+    position: absolute;
+    top: 0;
+    width: 172px;
+}
+
+#header h1.sublogo {
+    color: #666666;
+    font-size: 24px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#header h1.seccion {
+    bottom: 10px;
+    color: #666666;
+    font-size: 18px;
+    font-weight: bold;
+    left: 10px;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+#header #tools {
+    background-color: #F6F6F6;
+    height: 65px;
+    left: 182px;
+    padding-top: 25px;
+    position: absolute;
+    top: 20px;
+    width: 797px;
+}
+
+.formTable {
+    border: medium none;
+}
+
+.formTable td, th {
+    border: medium none;
+    padding: 4px;
+    vertical-align: top;
+}
+
+input[type="text"], input[type="password"], input[type="date"], textarea {
+    border: 1px solid #CCCCCC;
+    font-size: 14px;
+    padding: 4px;
+}
+
+.login {
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(1, rgb(51,204,51)),
+        color-stop(0, rgb(0,102,0))
+        );
+    background-image: -moz-linear-gradient(
+        center bottom,
+        rgb(51,204,51) 100%,
+        rgb(0,102,0) 0%
+        );
+
+    border: 0 none;
+
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -khtml-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: bold;
+    padding: 7px 10px;
+    text-decoration: none;
+}
+
+.error{
+    background-color: #ee4143;
+    
+    width: 295px;
+    color: #fff;
+    padding: 15px;
+    border: 5px solid #bf3333;
+    text-align: center;
+    font-weight: bold;
+    margin: 5px auto;
+}

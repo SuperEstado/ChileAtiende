@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'gobCLLight';
+    src: url('http://www.chileatiende.cl/assets/css/font/gobcl_light-webfont.eot');
+    src: url('http://www.chileatiende.cl/assets/css/font/gobcl_light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('http://www.chileatiende.cl/assets/css/font/gobcl_light-webfont.ttf') format('truetype'),
+        url('http://www.chileatiende.cl/assets/css/font/gobcl_light-webfont.svg#gobCLLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+#widget_chileatiende {
+    min-height: 140px;
+    width: 234px;
+    border: solid 1px #d9d9d9;
+    background-image: url(../images/widgets/bg.png);
+    background-repeat: repeat-x;
+    background-color: #ECECEC;
+    font-size: 87.5%;
+	text-align: left;
+}
+#widget_chileatiende h1, p {
+    margin-bottom:5px;
+}
+#widget_chileatiende h1 {
+    font-size: 18px;
+    color: #004B99;
+}
+#widget_chileatiende .detalle {
+    width: 50px;
+    background-image: url(../images/widgets/bg_detalle.png);
+    background-repeat: repeat-y;
+    height: 8px;
+    margin-left: 171px;
+}
+#widget_chileatiende .detalle2 {
+    width: 50px;
+    background-image: url(../images/widgets/bg_detalle.png);
+    background-repeat: repeat-y;
+    height: 4px;
+    margin-left: 171px;
+    margin-top: 15px;
+}
+#widget_chileatiende h1 {
+    text-align: center;
+}
+#widget_chileatiende #consulta-gcs {
+    text-align: center;
+}
+#widget_chileatiende #consulta-gcs #buscar {
+    border: solid 1px #d9d9d9;
+    box-shadow:inset 0 0 10px #EBEBEB;
+    -moz-box-shadow:inset 0 0 10px #EBEBEB;
+    padding: 5px 7px;
+    width: 169px;
+}
+#widget_chileatiende #consulta-gcs #buscar_btn {
+    border: none;
+    background-image: url(../images/widgets/lupa.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: 22px;
+    width: 22px;
+    text-indent: -5000px;
+    cursor:pointer;
+    margin-left: 10px;
+}
+
+#widget_chileatiende .txt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #333;
+    margin: 10px 5px;
+    line-height: 1.2em;
+	text-align: left;
+}
+#widget_chileatiende .txt a {
+	border: none;
+}
+#widget_chileatiende .txt img {
+    vertical-align: top;
+    margin-right: 7px;
+    float: left;
+}
+#widget_chileatiende .clear {
+    clear: left;
+}

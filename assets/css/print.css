@@ -1,0 +1,483 @@
+/* El muy necesario Clearfix */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+/* Estilado general a los inputs (Windows 7) */
+input[type="radio"], input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    background: transparent;
+    border: 0;
+}
+
+body {
+    font-family: Verdana, Helvetica, "Nimbus Sans L", sans-serif;
+    font-size: 12px;
+    color: #000;
+    line-height: 140%;
+width: 90%;
+}
+
+/*Estilos básicos */
+
+strong {font-weight: bold;}
+em {font-style: italic;}
+a {color: #1e8de4; text-decoration: none;}
+a:hover {text-decoration: underline;}
+a:active {color: #ef4144; text-decoration: underline;}
+
+a.more {
+  display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.red {
+    color: #ed4043;
+}
+
+.blue {
+    color: #1e8de4;
+}
+
+.qr {
+    display:block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+div#wrap {
+    width: 100%;
+margin: 20px;
+}
+
+
+div#header *{
+    display: none;
+}
+
+div#header .header_content{
+    display: block;
+}
+
+div#header .logoPrint{
+    display: block;
+}
+
+
+
+div#main {
+}
+
+div#categorypane {
+}
+
+ul#categorytabs {
+display: none;
+}
+
+
+
+div.paginacion {
+    position: absolute;
+    right: 12px;
+    height: 24px;
+    width: 180px;
+}
+
+div.paginacion form {
+    display: block;
+    margin: 5px 5px;
+    font-size: .8em;
+    color: #5a5a5a;
+    float: left;
+}
+
+div.paginacion form input {
+    background: #fff;
+    background-image: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #5a5a5a;
+    color: #000;
+    text-align: center;
+}
+
+div.paginacion a.prev {
+    display: block;
+    background: transparent url(../images/bg-prev.png) 0 0 no-repeat;
+    width: 25px;
+    height: 24px;
+    overflow: hidden;
+    text-indent: -999px;
+    float: left;
+}
+
+div.paginacion a.next {
+    display: block;
+    background: transparent url(../images/bg-next.png) 0 0 no-repeat;
+    width: 25px;
+    height: 24px;
+    overflow: hidden;
+    text-indent: -999px;
+    float: left;
+}
+
+
+
+div#content {
+}
+
+div#maincontent {
+    margin-top: 8px;
+    padding: 0 20px 40px 20px;
+}
+
+p.info {
+    display: none;
+}
+
+.title {
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    margin-top: 36px;
+    width: 100%;
+    line-height: 120%;
+}
+
+
+div#maincontent.left {
+
+}
+
+div#maincontent.right {
+}
+
+div#maincontent p {
+    margin: 10px 0 0 0;
+}
+
+div#maincontent p.responsible {
+    margin: 4px 0 10px 0;
+}
+
+div#maincontent dl#options dd {
+    display: inline;
+    margin: 0 10px 0 0;
+}
+
+div#maincontent dl#options dd a {
+    background: transparent url(../images/icons_sprite.png) 0 0 no-repeat;
+    display: inline-block;
+    height: 14px;
+    padding: 0 0 0 16px;
+}
+
+div#maincontent dl#options dd a.rate {
+    background: none;
+    padding: 0;
+    color: #ccc;
+    font-size: 1.6em;
+}
+
+div#maincontent dl#options dd a.rate:hover {
+    text-decoration: none;
+    color: #fc0;
+}
+
+div#maincontent dl#options dd a.rated {
+    color: #fc0;
+}
+
+ul.access_share_menu { 
+display: none;
+}
+
+div#maincontent hr {
+    display: none;
+}
+
+div#maincontent h3, h4 {
+    font-family: Arial, sans-serif;
+    font-size: 1.4em;
+    color: #595959;
+    margin: 10px 0 0 0;
+    font-weight: bold;
+}
+
+div#maincontent h3 {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+div#maincontent h3.first_topic {
+}
+
+div#maincontent ul#resumen_tramite {
+    margin: 0;
+	border-bottom: 1px solid #ccc;
+}
+
+div#maincontent ul#resumen_tramite li {
+    /* Hasta que formateen el texto de las fichas
+    width: 214px; 
+    */
+    width: 100%;
+    display: inline-block;
+    float: left;
+    border-top: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin: -1px 0 0 0;
+}
+
+div#maincontent ul#resumen_tramite li ul li {
+    border: 0;
+    list-style: inside disc;
+}
+
+div#maincontent ul#resumen_tramite li ol li {
+    border: 0;
+    list-style: inside decimal;
+}
+
+
+div#maincontent ul#resumen_tramite li.first {
+    /* Hasta que formateen el texto de las fichas
+    height: 80px;
+    */
+}
+
+div#maincontent ul#resumen_tramite li.second {
+    /* Hasta que formateen el texto de las fichas
+    height: 180px;
+    */
+}
+
+
+div#maincontent ul#resumen_tramite li.marco_legal {
+    /* Hasta que formateen el texto de las fichas
+    width: 646px;
+    */
+    border-bottom: 1px solid #ccc;
+}
+
+div#maincontent ul#resumen_tramite li.qr {
+    overflow: hidden;
+}
+
+div#maincontent ul#resumen_tramite li h4, div#maincontent ul#resumen_tramite li p {
+    margin: 10px 10px 0 10px;
+}
+
+div#maincontent div#howto_tramite {
+    width: 100%;
+    margin: 50px auto 0 auto;
+    background: #f6f6f6 url(../images/bg-tabs.png) bottom left repeat-x;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    position: relative;
+    z-index: 2;
+}
+
+div#maincontent div#howto_tramite ul.nav {
+    position: absolute;
+    z-index: 2;
+    left: 12px;
+    top: -41px;
+    margin: 0;
+}
+
+div#maincontent div#howto_tramite ul.nav li {
+    display: inline;
+    margin: 0;
+}
+
+div#maincontent div#howto_tramite ul.nav li a {
+    display: inline-block;
+    height: 20px;
+    color: #787878;
+    border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border: 1px solid #dbdbdb;
+    border-bottom: 0;
+    font-family: Arial, "Nimbus Sans L", Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+    background: #f6f6f6 url(../images/bg-tab.png) 0 0 repeat-x;
+    position: relative;
+}
+
+div#maincontent div#howto_tramite div {
+    margin: 20px;
+}
+
+
+div#maincontent ul, ol {
+    margin: 2em 0 0 20px;
+}
+
+div#maincontent ul li {
+    list-style: inside disc;
+    margin-bottom: 1em;
+}
+
+div#maincontent ol li {
+    list-style: inside decimal;    
+margin-bottom: 10px;
+    margin-bottom: 1em;
+}
+
+
+
+
+div#maincontent div.noticia p.meta {
+    margin: 2px 0 16px 0;
+}
+
+div#maincontent div.noticia img.left {
+    margin: 0 10px 5px 0;
+}
+
+div#maincontent div.noticia img.right {
+    margin: 0 0 5px 10px;
+}
+
+
+/* Barra lateral estándar */
+
+div#sidebar {
+   display: none;
+}
+/*formulario contacto*/
+div#formacontacto {
+   display: none;
+}
+
+/*formulario contacto amigo*/
+div#formaamigo {
+   display: none;
+}
+
+/* FOOTER */
+
+div#footer {
+
+    margin: 0 auto 0 1px;
+    clear: both;
+border-top: 1px solid #000;
+height: 100px;
+    font-size: 1em;
+    font-family: Arial, "Nimbus Sans L", Helvetica, sans-serif;
+    padding: 20px 0;
+
+    position: relative;
+text-align: center;
+}
+
+div#footer div {
+}
+
+div#footer div a, div#footer div p, div#footer div li, div#footer div address, div#footer div h2, div#footer div h3, div#footer div h4 {
+    font-size: 1em;
+
+}
+
+div#footer div h2{
+display: none;
+}
+
+div#footer div h3{
+    font-weight: bold;
+    margin: 0;
+
+}
+
+div#footer div#logo_redchile_footer h2 {
+    text-transform: uppercase;
+}
+
+div#footer div h4 {
+    font-weight: normal;
+    margin: 0;
+}
+
+div#footer div a {
+    color: #fff;
+}
+
+
+div#footer div ul li {
+display: none;
+}
+
+
+
+div#footer div#acceso_directo {}
+div#footer div#visualizadores {}
+
+div#footer div#bottom_footer {
+    height: 28px;
+    clear: both;
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 4px 0 0 0;
+    bottom: 0;
+border-top: 1px solid #ccc;
+text-align: center;
+font-size: 10px;
+}
+
+div#footer div#bottom_footer address {
+
+    margin: 0 auto;
+text-align: center;
+}
+
+div#footer div#bottom_footer ul {
+display: none;}
+
+div#footer div#bottom_footer ul li {
+    display: inline-block;
+    margin: 0 0 0 5px;
+}
+
+
+/* FIN FOOTER */
+
+div#registro, div#contacto, div#no_disponible {
+display: none;
+}
+#barra_superior, #menu, #registro, #contacto, #categorypane, #sidebar, #footer, #colabore, #encuesta, #no_disponible, #overlayVersionBeta, #overlayOpciones, #options, .breadcrumbs, #howto_tramite {
+	display: none;
+}
